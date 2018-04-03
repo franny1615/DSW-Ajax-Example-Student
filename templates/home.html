@@ -17,7 +17,7 @@
 		$(document).ready(function(){
 			$("button").click(function(){
 				$("#div1").load("/update_div1",function(){
-					alert("The request was performed.");
+					$("#h2t").replaceWith("<h2>==>This text is updated</h2>");
 				});
 			})
 		});
@@ -34,7 +34,7 @@
     <button>Update div 1</button>
    
    <div id="div2">
-      <h2>This text isn't updated.</h2>
+      <h2 id="h2t">This text isn't updated.</h2>
     </div>
 
    
